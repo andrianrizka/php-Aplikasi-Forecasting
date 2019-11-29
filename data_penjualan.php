@@ -77,7 +77,8 @@ include "koneksi.php";
 	$b0 = ($total_y/$no) - $b1 * ($total_x/$no);
 	echo "Rumus Regresi Linier<br>";
 	echo "y = $b0 + $b1 x<br>";
-
+	
+	error_reporting(0);
 	if ($prediksi){
 		$x = $x + $list_pilihan;
 		$y = $b0 + $b1 * $x;
